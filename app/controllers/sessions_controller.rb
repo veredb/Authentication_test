@@ -14,16 +14,6 @@ class SessionsController < ApplicationController
     end
   end
 
-#  def destroy
-#    session[:user_id] = nil
-#    redirect_to user, :notice => "Logged out!"
-#  end
-
-   def destroy
-      @user = User.find(params[:id])
-      @user.destroy
-   end
-
 
       def email_params
         # params.permit(:email, :password, :password_confirmation).permit(:email)
