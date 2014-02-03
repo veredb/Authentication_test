@@ -14,3 +14,12 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+<script>
+         $(function(){
+           $(".scroll").click(function(event){
+             event.preventDefault();
+             $("body").animate({"scrollTop": "0px"}, 100);
+           })
+         });
+</script>

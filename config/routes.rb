@@ -1,5 +1,6 @@
 AuthenticationTest::Application.routes.draw do
 
+  get "pages/home"
   resources :users
   resources :sessions
   get "/user/show"
