@@ -3,3 +3,5 @@
 
 This is a Rails 4 mini project.
 Creating Authentication: sign up, sign in.
+There is Javascript and jQuery code that allows scrolling from one paragraph to another, in an article.
+HTML and CSS is added as needed.
