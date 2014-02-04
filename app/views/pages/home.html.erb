@@ -7,17 +7,33 @@
            $(".scroll").click(function(event){
              event.preventDefault();
              $("body").animate({"scrollTop": "0px"}, 1000);
-           })
+           });
+           $(".first").click(function(event){
+             event.preventDefault();
+             $("body").animate({"scrollTop":$('#first').position().top}, 1000);
+           });
+           $(".second").click(function(event){
+             event.preventDefault();
+             $("body").animate({"scrollTop":$('#second').position().top}, 1000);
+           });
+           $(".third").click(function(event){
+             event.preventDefault();
+             $("body").animate({"scrollTop":$('#third').position().top}, 1000);
+           });
+           
          });
    </script>
 
   </head>
   <body>
-       
-<div id = "first" >
-
+      
+<a href="#" class = "first" >First Paragraph</a> 
+<a href="#" class = "second" >Second Paragraph</a> 
+<a href="#" class = "third" >Third Paragraph</a> 
+<div id="container">
 <h1> This is an Article</h1>
 <h2> Once you read it all you can scroll up again using the link "Scroll Up"</h2>
+<div id = "first" >
 CAIRO -- When Egyptians rose up against their government three years ago, it wasn’t just dictator Hosni Mubarak’s reign that crumbled. The mass protests, political instability, and now, increasingly frequent terrorist attacks, have devastated Egypt’s once-thriving tourism sector.
 
 For many Egyptians still working in the industry today, there is only one answer to their problems: Gen. Abdel-Fattah el-Sissi, who is gearing up for a likely presidential bid and is seen as a leader who will bring back security to businesses.
@@ -38,7 +54,8 @@ For many Egyptians still working in the industry today, there is only one answer
 "Sissi is the only man who can solve Egypt’s problems," said Emad Nour, a third-generation shopkeeper in Cairo’s sprawling Khan el-Khalili bazaar, where tourists used to flock before the unrest began. "He can fix the security problem here."
 
 Nour once made a decent living making intricate tables, traditional lamps and other handmade items that often attract tourists. But nowadays he, like many other vendors, has barely anyone coming to his shop.CAIRO -- When Egyptians rose up against their government three years ago, it wasn’t just dictator Hosni Mubarak’s reign that crumbled. The mass protests, political instability, and now, increasingly frequent terrorist attacks, have devastated Egypt’s once-thriving tourism sector.
-
+</div>
+<div id="second"><br />
 For many Egyptians still working in the industry today, there is only one answer to their problems: Gen. Abdel-Fattah el-Sissi, who is gearing up for a likely presidential bid and is seen as a leader who will bring back security to businesses.
 
 "Sissi is the only man who can solve Egypt’s problems," said Emad Nour, a third-generation shopkeeper in Cairo’s sprawling Khan el-Khalili bazaar, where tourists used to flock before the unrest began. "He can fix the security problem here."
@@ -72,7 +89,7 @@ Nour once made a decent living making intricate tables, traditional lamps and ot
 
 At Cairo’s ancient Giza Pyramids, which used to be swarming with foreigners, desperate vendors and guides with skinny horses now harass the occasional straggling tourists. Buses carrying tourists from the capital to resort towns along the Red Sea now travel in armed convoys through the restive Sinai, where hardline militants have launched a campaign against security forces. Once bustling hotels and youth hostels are eerily quiet.
 </div><br />
-<div id = "second">
+<div id = "third">
              From 2009 to 2010, before the revolution, Egypt took in $11.6 billion from tourism, according to Reuters. But 2012 to 2013 were marked by a devastating dip in tourism, with Egypt only earning $9.75 billion from the industry. Following the military's ouster of Islamist President Mohammed Morsi last year, tourism fell by a whopping 45 percent, Tourism Minister Hisham Zaazou told Reuters.
 
 CAIRO -- When Egyptians rose up against their government three years ago, it wasn’t just dictator Hosni Mubarak’s reign that crumbled. The mass protests, political instability, and now, increasingly frequent terrorist attacks, have devastated Egypt’s once-thriving tourism sector.
@@ -122,6 +139,7 @@ For many Egyptians still working in the industry today, there is only one answer
 
 
 </div>
+</div><!-- end of container -->
 <a href="#" class="scroll">Scroll Up</a>
 </body>
 
